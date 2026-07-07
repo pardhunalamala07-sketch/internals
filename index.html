@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <title>
+    R.V.R & J.C Internals
+  </title>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+  <header>
+    <div class="h-d">
+      <div class="d-1">
+        <button class="one">
+          RVRJC INTERNALS
+        </button> 
+      </div>
+      <div class="d-2">
+        <button class="two">
+        DashBoard
+        </button>
+        <button class="three">
+          Internals
+        </button>
+        <button class="four">
+          SGPA
+        </button>
+        <button class="five">
+          CGPA
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="six">
+      Internal Calculator
+    </div>
+    <div class="d-3">
+      <label class="seven">
+      Sectional Marks 1
+      </label>
+      <input class="input-1" id="s-1"
+      min="0" max="18" step="1"
+      type="number">
+      <label class="seven">
+        Sectional Marks 2
+      </label>
+      <input class="input-1" id="s-2"
+      min="0" max="18" step="1"
+      type="number">
+      <label class="seven">
+        Assignment Marks 1
+      </label>
+      <input class="input-1" id="a-1"
+      min="0" max="12" step="1"
+      type="number">
+      <label class="seven">
+        Assignment Marks 2
+      </label>
+      <input class="input-2" id="a-2"
+      min="0" max="12" step="1"
+      type="number">
+      <label class="seven">
+        Quiz Marks 1
+      </label>
+      <input class="input-2" id="q-1"
+      min="0" max="12" step="1"
+      type="number">
+      <label class="seven">
+        Quiz Marks 2
+      </label>
+      <input class="input-2" id="q-2"
+      min="0" max="12" step="1"
+      type="number">
+      <label class="seven">
+        Attendence
+      </label>
+      <input class="input-3" id="atten"
+      min="0" max="100" step="1"
+      type="number">
+      <button onclick="calculate()"class="att-but">
+        Calculate
+      </button>
+    </div>
+    <div class="result-div">
+    <h2 class="result-data" id="session"></h2>
+    <h2 class="result-data" id="assign"></h2>
+    <h2 class="result-data" id="quizm"></h2>
+    <h2 class="result-data" id="attend"></h2>
+    <h2 class="result-data_t" id="result"></h2>
+    </div>
+  </div>
+  </body>
+  <script src="internal.js"></script>
+</html>
